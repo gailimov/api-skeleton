@@ -1,0 +1,4 @@
+clover.xml
+phpunit.xml
+vendor/
+.vscode/

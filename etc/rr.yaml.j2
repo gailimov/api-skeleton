@@ -1,0 +1,9 @@
+http:
+  address: :8080
+  workers:
+    command: "php /app/app.php"
+    pool:
+      numWorkers: {{ RR_WORKERS_NUM }}
+      {% if ENV == "dev" %}
+      maxJobs: 1
+      {% endif %}
